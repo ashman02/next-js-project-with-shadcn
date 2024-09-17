@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   const isAuthenticated = useAuthenticationStore((state) => state.isAuthenticated)
+  console.log(isAuthenticated)
   const login = useAuthenticationStore((state) => state.login)
   const logout = useAuthenticationStore((state) => state.logout)
   return (
